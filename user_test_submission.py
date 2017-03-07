@@ -8,7 +8,7 @@ import time
 if __name__ == '__main__':
     tic=time.time()
     print('Reading file ...')
-    X_df = pd.read_csv('X_train.csv').values
+    X_df = pd.read_csv('X_train.csv')
     y_array = pd.read_csv('Y_train.csv').values
 
     skf = ShuffleSplit(n_splits=2, test_size=0.5, random_state=67)
